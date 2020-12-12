@@ -1,0 +1,31 @@
+class pointsScoring
+{
+  string userData;
+  int pointData;
+  fstream dataLog;
+
+
+  public: void dataSetter(string userInput, int pointInput) 
+  {
+    pointsController strSet;
+    strSet.strSetter(userInput);
+
+    pointsController pointSet;
+    pointSet.pointSetter(pointInput);
+  }
+  
+  public: void logToFile()
+  {
+  } 
+  
+ userData = globalUserInput;
+
+  pointsScoring::strSetter(string globalUserInput)
+  {
+  }
+
+  pointsScoring::pointSetter(int globalPointInput)
+  {
+    pointData = globalPointInput;
+  }
+};
