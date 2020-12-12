@@ -3,14 +3,14 @@
 #include <fstream>
 #include <ostream>
 using namespace std;
-
+#define SIZE 76
 /******************************************************************************
 Authors: Nathaniel Smith and Ryan Horgan
 Date: Finalized 12/9/20
 Purpose:
 *******************************************************************************/
 
-
+int hashIt();
 /* 
 Author:Ryan 
 Purpose: 
@@ -18,7 +18,7 @@ Purpose:
 int main() 
 {
     
-    vector <pointsScoring> users;
+    vector <pointsScoring> users[SIZE];
     pointsScoring log;
     int choice = 0;
     string tempUser;
@@ -79,3 +79,12 @@ int main()
     }
   }
 }
+  
+  int hashIt()
+  {
+    unsigned long key;
+    
+    
+    
+    return 0;
+  } 

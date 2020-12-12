@@ -21,6 +21,13 @@ using namespace std;
     dayData = day;
   }
 
+  void pointsScoring::readData()
+  {
+    fstream dataLog;
+    dataLog.open("dataLog.txt", ios::out | ios::app);
+    dataLog >> 
+  }
+
   void pointsScoring::logToFile()
   { 
     ofstream dataLog;
