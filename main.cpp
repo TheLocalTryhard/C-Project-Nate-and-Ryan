@@ -7,8 +7,8 @@ using namespace std;
 
 /******************************************************************************
 Authors: Nathaniel Smith and Ryan Horgan
-Date: Finalized 12/9/20
-Purpose:
+Date: Finalized 12/13/20
+Purpose: A program with a menu system that would be able to read and write to a text file, as well as construct objects of a class and store them in a vector array. This program saves player names, scores, and dates and stores them.
 *******************************************************************************/
 
 pointsScoring log;
