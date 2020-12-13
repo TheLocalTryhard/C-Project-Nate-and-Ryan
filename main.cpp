@@ -4,7 +4,6 @@
 #include <vector>
 #include <ostream>
 using namespace std;
-
 /******************************************************************************
 Authors: Nathaniel Smith and Ryan Horgan
 Date: Finalized 12/13/20
