@@ -1,38 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@TheLocalTryhard 
-Learn Git and GitHub without any code!
-Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
-
-
-TheLocalTryhard
-/
-C-Project-Nate-and-Ryan
-1
-00
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-C-Project-Nate-and-Ryan/main.cpp
-@TheLocalTryhard
-TheLocalTryhard keep data secure in a separate location
-Latest commit d077822 3 minutes ago
- History
- 1 contributor
-126 lines (118 sloc)  3.24 KB
-  
 #include "pointsScoring.h"
 #include <iostream>
 #include <fstream>
