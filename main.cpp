@@ -23,7 +23,7 @@ int main()
     string tempUser;
     int tempScore, tempDay, tempMonth, tempYear, vecCount = 0;
 
-  while(choice != 6)
+  while(choice != 5)
   {
     cout << "Welcome to No Graphics TF2! Please choose an option:" << endl;
     cout << "[1]Add a player's score" << endl;
@@ -114,7 +114,7 @@ int main()
       cout << "Thank you for running. Goodbye!";
       return 0;
       }
-      else
+      else if(choice < 1 || choice > 5)
       {
         cout << "Invalid input. Please try again." << endl;
       }
