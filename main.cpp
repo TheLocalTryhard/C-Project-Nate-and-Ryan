@@ -63,7 +63,7 @@ int main()
       log.objCreation(tempUser,tempScore,tempYear,tempMonth,tempDay);
       gamers.push_back(log);
       vecCount++;
-      cout << vecCount << endl;
+      //cout << vecCount << endl;
     }
     else if(choice == 2)
     {
