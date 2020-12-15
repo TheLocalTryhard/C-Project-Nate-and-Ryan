@@ -1,0 +1,1 @@
+This program is designed to store and call gamer's scores, usernames, and dates. It ouputs a table with this data formatted. The class pointsScoring, found in pointsScoring.hpp, declares all variables and methods used by both main.cpp and pointsScoring.cpp.

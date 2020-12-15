@@ -6,7 +6,7 @@ using namespace std;
 
 /* 
 Author: Nate
-Purpose: 
+Purpose: Stores user data to class.
 */
   void pointsScoring::objCreation(string user, int score, int year, int month, int day)
   {
@@ -18,7 +18,7 @@ Purpose:
   }
 /* 
 Author: Nate
-Purpose: Reads data from user input, opens and closes file dataLog.txt
+Purpose: Reads data from user input, opens and closes file dataLog.txt.
 */
   void pointsScoring::readData()
   {
@@ -30,7 +30,7 @@ Purpose: Reads data from user input, opens and closes file dataLog.txt
 
 /* 
 Author: Ryan
-Purpose: Takes date data and verifies that it matches
+Purpose: Takes date data and verifies that it matches input data. Returns t/f.
 */  
   bool pointsScoring::isDate(int tempYear, int tempMonth, int tempDay)
   {
@@ -42,17 +42,12 @@ Purpose: Takes date data and verifies that it matches
     }
     return false;
   }
-/* 
-Author: Ryan
-Purpose: Prints players data with date
-*/
-  void pointsScoring::toString(int year, int month, int day)
-  {
-    cout << "Player " << userData << " scored: " << pointData;
-  }
+ 
+
+  
 /* 
 Author: Nate
-Purpose: Logs user data to file dataLog.txt
+Purpose: Logs user data to file dataLog.txt.
 */
   void pointsScoring::logToFile()
   { 

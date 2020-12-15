@@ -12,7 +12,8 @@ Purpose: A program with a menu system that would be able to read and write to a 
 
 pointsScoring log;
 /* 
-Author:Ryan 
+Author:Ryan: Menu and choices 1 and 2
+Nate: Choices 3-5
 Purpose: Creates user interface and inputs user data to methods.
 */
 int main() 
