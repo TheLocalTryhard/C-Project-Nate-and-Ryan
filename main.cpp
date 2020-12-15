@@ -1,4 +1,4 @@
-#include "pointsScoring.h"
+#include "pointsScoring.hpp"
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -13,7 +13,7 @@ Purpose: A program with a menu system that would be able to read and write to a 
 pointsScoring log;
 /* 
 Author:Ryan 
-Purpose: 
+Purpose: Creates user interface and inputs user data to methods.
 */
 int main() 
 {
@@ -31,7 +31,7 @@ int main()
     cout << "[4]High Score" << endl;
     cout << "[5]Quit" << endl;
     cin >> choice;
-      
+
     if(choice == 1)
     {
       cout << "Enter your username: ";
@@ -63,12 +63,12 @@ int main()
       log.objCreation(tempUser,tempScore,tempYear,tempMonth,tempDay);
       gamers.push_back(log);
       vecCount++;
-      //cout << vecCount << endl;
     }
     else if(choice == 2)
     {
       log.logToFile();
     }
+    
     else if(choice == 3)
     {
       cout << "Enter year the score was earned:";
@@ -107,6 +107,15 @@ int main()
           break;
         }
       }
+    }
+    else if(choice == 4)
+    {
+      cout << "Players: \t Score: \t    Date:" << endl;
+      for(int i = 0; i < vecCount; i++)
+      {
+        cout << gamers.at(i).userData << "\t\t\t" << gamers.at(i).pointData << "\t \t \t" << gamers.at(i).monthData << "/" << gamers.at(i).dayData << "/" << gamers.at(i).yearData << endl;
+      }
+      cout << endl;
     }
     else if(choice == 5)
       {

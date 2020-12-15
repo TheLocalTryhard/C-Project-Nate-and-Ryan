@@ -1,9 +1,13 @@
 #include <iostream>
 #include <fstream>
 #include <ostream>
-#include "pointsScoring.h"
+#include "pointsScoring.hpp"
 using namespace std;
 
+/* 
+Author: Nate
+Purpose: 
+*/
   void pointsScoring::objCreation(string user, int score, int year, int month, int day)
   {
     userData = user;
@@ -12,7 +16,10 @@ using namespace std;
     monthData = month;
     dayData = day;
   }
-
+/* 
+Author: Nate
+Purpose: Reads data from user input, opens and closes file dataLog.txt
+*/
   void pointsScoring::readData()
   {
     fstream dataLog;
@@ -21,7 +28,10 @@ using namespace std;
     dataLog.close();
   }
 
-  
+/* 
+Author: Ryan
+Purpose: Takes date data and verifies that it matches
+*/  
   bool pointsScoring::isDate(int tempYear, int tempMonth, int tempDay)
   {
     fstream dataLog;
@@ -32,11 +42,18 @@ using namespace std;
     }
     return false;
   }
-
+/* 
+Author: Ryan
+Purpose: Prints players data with date
+*/
   void pointsScoring::toString(int year, int month, int day)
   {
     cout << "Player " << userData << " scored: " << pointData;
   }
+/* 
+Author: Nate
+Purpose: Logs user data to file dataLog.txt
+*/
   void pointsScoring::logToFile()
   { 
     ofstream dataLog;
